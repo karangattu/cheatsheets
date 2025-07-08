@@ -77,7 +77,7 @@ Share your app in three ways:
     To deploy Shiny apps:
 
     -   Create a free or professional account at [shinyapps.io](https://www.shinyapps.io/)
-    -   Use the reconnect-python package to publish with `rsconnect deploy shiny <path to directory>`
+    -   Use the rsconnect-python package to publish with `rsconnect deploy shiny <path to directory>`
 
 2.  Purchase Posit Connect, a publishing platform for R and Python.
     [posit.co/products/enterprise/connect/](https://posit.co/products/enterprise/connect/)
@@ -349,8 +349,8 @@ Use the shinyswatch package to add existing bootstrap themes to your Shiny app u
 import shinyswatch
 
 app_ui = ui.page_fluid(
-    shinyswatch.theme.darkly(), 
     # ...
+    theme=shinyswatch.theme.darkly(), 
 )
 ```
 
